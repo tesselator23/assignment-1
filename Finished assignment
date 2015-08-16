@@ -1,0 +1,380 @@
+<!--Name: Matt Dobrowolski
+ID: 212151064-->
+
+
+<!--Start of code-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--jquery code imported-->
+   <link rel="stylesheet" href="themes/mytheme.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!--home page, is start of webpage and main page
+//Also at the top of every page is the home button to get back to main webpage-->
+<div data-role="page" id="home" data-theme="d">
+  <div data-role="header">
+<h1>Restaurant</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<!--introduction-->
+    <p>Welcome to Cecile's Restaurant! Click the links below to check out out our menu and other important information.</p>
+<!--logo-->
+   <img src="ceciles.jpg" style="width:640x;height:427px;"/>
+  </div>
+<!--menu for navigation presented on every page-->
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+<!--Different topics for navigation-->
+		<li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+<!--contact form page for customers to contact restaurant-->
+<div data-role="page" id="Contact" data-theme="d">
+  <div data-role="header">
+    <h1>Feedback</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<!--feedback form, currrently not connected to anything. fake address (assignment_form)-->
+  <form action="assignment_form.asp">
+<!--input fields-->
+    Customer Name: <input type="text" name="fname"><br>
+	Email: <input type="text" name="lname"><br>
+	Feedback: <input type="text" name="lname"><br>
+<!--submit button goes nowhere-->
+	<input type="submit" value="Submit">
+	</form>
+  
+  </div>
+
+  <div data-role="footer">
+  <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+</div>
+</div>
+<!--About page for the restaurant, explaining who they are and they sell-->
+<div data-role="page" id="About" data-theme="d">
+  <div data-role="header">
+<h1>About Us</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<!--logo-->
+  <img src="ceciles.jpg" style="width:640x;height:427px;"/>
+    <p>Cecile's Restaurant is an Italian, pizza and pasta restaurant specialising in amazing pizzas and pasta dishes from Italy. And only the best and finest desserts. For a full list of our menu and contact information, visit the links below. We hope to see you soon.</p>
+    
+  </div>
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+<!--information page about the developer i.e me-->
+<div data-role="page" id="info" data-theme="d">
+  <div data-role="header">
+<h1>Developer Information</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" >
+  <br></br>
+   This entire mobile webpage was created by Matt Dobrowolski, from Deakin University studying 3rd year in Information Technology (Bachelor).
+   <br></br>
+  </div>
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="Menu" data-theme="d">
+  <div data-role="header">
+<h1>Restaurant</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+<!--list of pictures for the different dishes on the menu-->
+  <div data-role="main" class="ui-content">
+   <ul class="bxslider">
+   <h1>Pasta</h2>
+   <a href="#Pasta" >
+  <img src="linguine.jpg"> </a>
+     <h1>Pizza</h2>
+<!--had to change width to be the same as the others, also imported pictures-->
+  <img src="pizza.jpg" style="width:640x;height:427px;"/>
+     <h1>Dessert</h2>
+  <img src="dessert.jpg" />
+</ul>
+  </div>
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="Location" data-theme="d">
+  <div data-role="header">
+<h1>Restaurant</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<!--map code imported from google api-->
+  <h2>Find us on the map below!</h2>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+<!--center for the map-->
+var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+<!--marker location-->
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+  </div>
+<!--map width and height-->
+  <div id="googleMap" style="width:700px;height:380px;"></div>
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pasta" data-theme="d">
+  <div data-role="header">
+<h1>Pasta</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+<!--information page of different types of pasta in list view-->
+  <div data-role="main" class="ui-content">
+  <h2>Pasta Dishes:</h2>
+    <ol data-role="listview" data-inset="true">
+      <li><a href="#linguine">Linguine</a></li>
+      <li><a href="#">Carbonara</a></li>
+      <li><a href="#">Spaghetti Bolognaise</a></li>
+    </ol>
+</div>
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="linguine" data-theme="d">
+  <div data-role="header">
+<!--specific pasta dish from pasta menu, with recipe and method to make-->
+<h1>Linguine</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <h1>Linguine with Shrimp and Creamy Roasted Tomatoes</h1>
+<!--picture of dish-->
+    <img src="linguinerecipe.jpg" style="width:640x;height:427px;"/>
+<h2>Ingredients</h2>
+<!--non-ordered list view of ingredients-->
+<ul>
+  <li>1.50 c. grape tomatoes</li>
+	<li>1 tbsp. extra-virgin olive oil</li>
+<li>1 tsp. thyme leaves</li>
+<li>kosher salt and freshly ground pepper</li>
+<li>0.75 lb. linguine</li>
+<li>1 c. heavy cream</li>
+<li>0.75 lb. large shrimp</li>
+<li>2 tsp. fresh lemon juice</li>
+<li>1 tsp. finely grated lemon zest</li>
+<li>1 tbsp. coarsely chopped flat-leaf parsley</li>
+</ul>
+ 
+<h2>Recipe</h2>
+<!--ordered list view of method for the dish-->
+<ol>
+  <li>Preheat the oven to 375 degrees F. In a large ovenproof skillet, toss the tomatoes with the olive oil and thyme and season with salt and pepper. Roast the tomatoes for about 25 minutes, until starting to brown and their skins split.</li>
+<li>Meanwhile, in a large pot of boiling salted water, cook the linguine until al dente; drain.</li>
+<li>Add the cream to the tomatoes and bring to a simmer. Cook over moderate heat, gently crushing the tomatoes, until the cream thickens slightly, about 3 minutes. Add the shrimp and simmer over moderate heat until cooked through, about 2 minutes. Season with salt and pepper. Add the linguine to the skillet along with the lemon juice and toss over low heat until the pasta is coated, about 1 minute. Add the lemon zest and parsley and toss. Transfer the pasta to warm bowls and serve at once.</li>
+</ol>
+ </div>
+
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+<div data-role="page" id="Gallery" data-theme="d">
+  <div data-role="header">
+  <style>
+<!--style for the appearance of the gallery with border and size-->
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
+</style>
+<h1>Gallery</h1><a href="#home" data-role="button" data-icon="home" data-iconpos="right" >Home</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+<!--gallery source of pictures, non clickable, just made to look nice in the format-->
+<div class="img">
+ <a target="_blank" href="#"><img src="linguine.jpg" alt="Linguine" width="110" height="90"></a>
+ <div class="desc">Linguine</div>
+</div>
+<div class="img">
+ <a target="_blank" href="#"><img src="dessert.jpg" alt="dessert" width="110" height="90"></a>
+ <div class="desc">Tiramisu</div>
+</div>
+<div class="img">
+ <a target="_blank" href="#"><img src="pizza.jpg" alt="pizza" width="110" height="90"></a>
+ <div class="desc">Pizza</div>
+</div>
+ </div>
+
+
+  <div data-role="footer">
+      <div data-role="navbar">
+  <ul>
+  <li><a href="#Menu" data-icon="bullets">Menu</a></li>
+      <li><a href="#info" data-icon="info">Developer Information</a></li>
+      <li><a href="#Gallery" data-icon="video">Gallery</a></li>
+	
+	  <li><a href="#Contact" data-icon="mail">Contact</a></li>
+	  <li><a href="#About" data-icon="user">About</a></li>
+	  <li><a href="#Location" data-icon="navigation">Location</a></li>
+    </ul>
+   
+  </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+<!--end of code-->
